@@ -1,1 +1,72 @@
 /*  your css code here. If applicable */
+/* Grid container */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 120px);
+  gap: 10px;
+
+  background-color: white;
+  padding: 10px;
+}
+
+/* Common styles for all boxes */
+#grid > div {
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+
+/* Grid positioning */
+
+/* 1 */
+#grid > div:nth-child(1) {
+  grid-column: 1 / -1;
+}
+
+/* 2 */
+#grid > div:nth-child(2) {
+  grid-row: 2 / 6;
+  grid-column: 1 / 2;
+}
+
+/* 3 */
+#grid > div:nth-child(3) {
+  grid-column: 2 / 3;
+}
+
+/* 4 */
+#grid > div:nth-child(4) {
+  grid-column: 3 / 5;
+}
+
+/* 5 */
+#grid > div:nth-child(5) {
+  grid-column: 2 / 4;
+}
+
+/* 6 */
+#grid > div:nth-child(6) {
+  grid-column: 4 / 5;
+}
+
+/* 7 */
+#grid > div:nth-child(7) {
+  grid-column: 2 / 3;
+}
+
+/* 8 */
+#grid > div:nth-child(8) {
+  grid-column: 3 / 4;
+}
+
+/* 9 */
+#grid > div:nth-child(9) {
+  grid-column: 4 / 5;
+}
+
+/* 10 */
+#grid > div:nth-child(10) {
+  grid-column: 2 / 5;
+}
