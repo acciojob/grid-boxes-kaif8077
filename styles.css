@@ -1,9 +1,8 @@
 /* Grid container */
 #grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 120px 120px 120px 120px 120px;
-  background-color: white;
 }
 
 /* Common box styling */
@@ -12,6 +11,7 @@
   color: white;
   font-size: 24px;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 /* 1 */
