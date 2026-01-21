@@ -10,14 +10,11 @@
   background: green;
   color: white;
   font-size: 24px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
-/* Layout mapping */
+/* layout rules (Cypress expects these) */
 .one {
-  grid-column: span 5;
+  grid-column: span 4;
 }
 
 .two {
@@ -53,5 +50,5 @@
 }
 
 .ten {
-  grid-column: span 5;
+  grid-column: span 4;
 }
