@@ -2,26 +2,58 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Layout</title>
+<title>Grid</title>
+<style>
+#grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+  padding:10px;
+}
 
+.box{
+  background:green;
+  color:white;
+  font-size:24px;
+  padding:10px;
+}
+
+.one{
+  grid-column: span 4;
+}
+
+.two{
+  grid-row: span 4;
+}
+
+.three{grid-column: span 1;}
+.four{grid-column: span 3;}
+
+.five{grid-column: span 3;}
+.six{grid-column: span 1;}
+
+.seven{grid-column: span 1;}
+.eight{grid-column: span 1;}
+.nine{grid-column: span 2;}
+
+.ten{
+  grid-column: span 4;
+}
+</style>
 </head>
 <body>
 
 <div id="grid">
   <div class="box one">1</div>
-
-  <div class="box left">2</div>
-
-  <div class="right">
-    <div class="box three">3</div>
-    <div class="box four">4</div>
-    <div class="box five">5</div>
-    <div class="box six">6</div>
-    <div class="box seven">7</div>
-    <div class="box eight">8</div>
-    <div class="box nine">9</div>
-    <div class="box ten">10</div>
-  </div>
+  <div class="box two">2</div>
+  <div class="box three">3</div>
+  <div class="box four">4</div>
+  <div class="box five">5</div>
+  <div class="box six">6</div>
+  <div class="box seven">7</div>
+  <div class="box eight">8</div>
+  <div class="box nine">9</div>
+  <div class="box ten">10</div>
 </div>
 
 </body>
